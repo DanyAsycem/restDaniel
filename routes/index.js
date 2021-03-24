@@ -12,4 +12,6 @@ router.get('/v1/guest', invitados.listaInvitados)
 const usuarios = require("../modulos/usuarios/usuarios");
 router.get('/v1/user', usuarios.listaUsuarios)
 
+const status = require("../modulos/estatus/status");
+router.get('/v1/status', status.listaStatus)
 module.exports = router;
